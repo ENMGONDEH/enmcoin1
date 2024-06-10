@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="fa">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ENMCoin</title>
+    <link rel="stylesheet" href="/styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>ENMCoin</h1>
+        <div class="coin-info">
+            <p>سکه: <span id="coins">0</span></p>
+            <p>تعداد کلیک: <span id="clicks">0</span></p>
+            <p>نرخ کلیک: <span id="clickRate">1</span> بر ثانیه</p>
+            <p>میزان سکه در هر کلیک: <span id="clickValue">1</span></p>
+            <p>سطح ارتقا نرخ کلیک: <span id="upgradeClickLevel">1</span></p>
+            <p>سطح ارتقا میزان سکه در کلیک: <span id="upgradeValueLevel">1</span></p>
+        </div>
+        <div id="coinButton" onclick="handleClick()"></div>
+        <button class="upgrade-button" onclick="upgradeClick()">ارتقا نرخ کلیک</button>
+        <button class="upgrade-button" onclick="upgradeClickValue()">ارتقا میزان سکه در کلیک</button>
+        <p>هزینه ارتقا نرخ کلیک: <span id="upgradeCost">100</span> سکه</p>
+        <p>هزینه ارتقا میزان سکه در کلیک: <span id="upgradeValueCost">100</span> سکه</p>
+    </div>
+    <footer>designed by ENM</footer>
+    <script src="/script.js"></script>
+</body>
+</html>
